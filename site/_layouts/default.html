@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+
+    <header>
+      <div class="avatar">
+        <img src="{{site.avatar}}" alt="{{site.name}} avatar">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Films</a></li>
+          <li><a href="/">Other work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include analytics.html %}
+  </body>
+</html>
