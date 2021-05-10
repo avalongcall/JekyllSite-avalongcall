@@ -3,6 +3,10 @@
 
 @import "reset";
 
+body {
+  background-color: #FE2424; 
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -10,9 +14,11 @@ header {
   text-align: center;
   height: 100vh;
   justify-content: center;
+  display: none;
 }
 
 .avatar img {
   width: 8rem;
+  height: 8rem;
   border-radius: 50%;
 }

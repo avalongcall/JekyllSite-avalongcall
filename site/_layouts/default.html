@@ -18,14 +18,10 @@
   <body>
 
     <header>
-      <div class="avatar">
-        <img src="{{site.avatar}}" alt="{{site.name}} avatar">
-      </div>
       <nav>
         <ul>
           <li><a href="/">About</a></li>
-          <li><a href="/">Films</a></li>
-          <li><a href="/">Other work</a></li>
+           <li><a href="/work/">Work</a></li>
         </ul>
       </nav>
     </header>
@@ -33,6 +29,14 @@
     <main>
       {{ content }}
     </main>
+
+    <footer>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:{{site.footer-links.email}}" target="_blank">{{site.footer-links.email}}</a></li>
+        <li><a href="/images/resume.pdf" download="Avalon_Greenberg_Call-Resume.pdf">Resume</a></li>
+      </ul>
+    </footer>
 
     {% include analytics.html %}
   </body>
