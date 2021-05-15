@@ -5,14 +5,6 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
@@ -20,8 +12,8 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">About</a></li>
-           <li><a href="/work/">Work</a></li>
+          <li><a href="/index/">Home</a></li>
+          <li><a href="/work/">Work</a></li>
         </ul>
       </nav>
     </header>
@@ -31,11 +23,12 @@
     </main>
 
     <footer>
-      <h3>Contact</h3>
+      <h3>Contact
       <ul>
         <li><a href="mailto:{{site.footer-links.email}}" target="_blank">{{site.footer-links.email}}</a></li>
         <li><a href="/images/resume.pdf" download="Avalon_Greenberg_Call-Resume.pdf">Resume</a></li>
       </ul>
+      </h3>
     </footer>
 
     {% include analytics.html %}
